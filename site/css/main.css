@@ -1,0 +1,118 @@
+/*basics för alla sidor*/
+
+body{
+    margin: 0;
+}
+
+.wrapper{
+    height: 185vh;
+    background-color: #5E5959;
+    display: grid;
+    grid-template-rows: 6% 94%;
+    grid-template-areas: 
+    "header"
+    "footer";
+
+}
+
+header{
+    grid-area: header;
+    background-color: #3E3838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+p{
+    font-family: 'Rockwell';
+    color: #FFD600;
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+    
+}
+
+.material-icons.md-48{
+    color: #FFD600;
+    font-size: 50px;
+    position: absolute;
+    left: -85px;
+    top: 6px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #5E5959;
+    display: grid;
+    grid-template-areas: 
+    "box1"
+    "box2"
+    "box3";
+}
+
+.burgarmeny {
+    height: 100vh;
+    width: 100vw;
+    background-color: #3E3838;
+    position: fixed;
+    left: -100%;   
+    transition: 0.3s;  
+    font-size: 180%;
+    font-family: 'Rockwell';
+}
+
+.activate{
+    left: 0vw;
+}
+
+ul{
+    position: absolute;
+    top: 100px;
+    padding: 0;
+    list-style: none;
+    color: #FFD600;
+}
+
+li{
+    padding: 60px;
+    
+}
+
+/* Hemsida */
+.box1{
+    grid-area: box1;
+    background-color: blue;
+    margin: 15px;
+    background-image: url(../img/skog.jpg);
+}
+
+
+.box2{
+    grid-area: box2;
+    background-color: blue;
+    margin: 15px;
+    background-image: url(../img/skåne.jpg);
+    
+} 
+
+.box3{
+    grid-area: box3;
+    background-color: blue;
+    margin: 15px;
+    background-image: url(../img/västkust.jpg);
+    
+}
+.collapsiblebox1,.collapsiblebox2,.collapsiblebox3{
+    height: 85px;
+    display: flex;
+    background-color: #3E3838;
+}
+
+.content3{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+}

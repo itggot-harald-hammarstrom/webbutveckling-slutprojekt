@@ -39,6 +39,7 @@ p{
     position: absolute;
     left: -85px;
     top: 6px;
+    z-index: 10;
 }
 
 footer{
@@ -60,6 +61,7 @@ footer{
     transition: 0.3s;  
     font-size: 180%;
     font-family: 'Rockwell';
+    z-index: 9;
 }
 
 .activate{
@@ -80,11 +82,14 @@ li{
 }
 
 /* Hemsida */
+
 .box1{
     grid-area: box1;
     background-color: blue;
     margin: 15px;
     background-image: url(../img/skog.jpg);
+    overflow: hidden;
+
 }
 
 
@@ -93,7 +98,7 @@ li{
     background-color: blue;
     margin: 15px;
     background-image: url(../img/skåne.jpg);
-    
+    overflow: hidden;
 } 
 
 .box3{
@@ -101,18 +106,38 @@ li{
     background-color: blue;
     margin: 15px;
     background-image: url(../img/västkust.jpg);
+    overflow: hidden;
+
     
 }
-.collapsiblebox1,.collapsiblebox2,.collapsiblebox3{
-    height: 85px;
+.collapsiblebox{
+    height: 396.63px;
+    width: 390px;
     display: flex;
     background-color: #3E3838;
+    position: relative;
+    bottom: 310px;
+    transition: 0.3s;
+    text-align: center;
 }
 
-.content3{
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.2s ease-out;
+.collapsiblebox.activated {
+    bottom: 0;
+    background-color: #3E3838;
+    
+}
+
+
+.material-icons.pil.ner{
+    color: #FFD600;
+    position: relative;
+    top: 315px;
+    left: 300px;
+    height: 75px;
+    font-size: 75px;
+    transform: rotateZ(0deg);
+    transition: transform 300ms ease-out;
+}
+.material-icons.pil.ner.rotate{
+    transform: rotateZ(180deg);
 }

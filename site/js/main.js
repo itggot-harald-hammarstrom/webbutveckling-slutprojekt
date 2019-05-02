@@ -3,17 +3,9 @@ function meny(event){
     meny.classList.toggle("activate")
 }
 
-function collapsible1(event){
-    let meny = document.querySelector(".collapsiblebox1")
-    meny.classList.toggle("activate")
+function collapsible(elem){
+    console.log(elem.querySelector(".pil"))
+    elem.classList.toggle("activated")
+    elem.querySelector(".pil").classList.toggle("rotate")
 }
 
-function collapsible2(event){
-    let meny = document.querySelector(".collapsiblebox2")
-    meny.classList.toggle("activate")
-}
-
-function collapsible3(event){
-    let meny = document.querySelector(".collapsiblebox3")
-    meny.classList.toggle("activate")
-}

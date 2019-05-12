@@ -22,6 +22,7 @@ header{
     justify-content: center;
     align-items: center;
     z-index: 100;
+    position: sticky;
 }
 
 p{
@@ -81,7 +82,12 @@ li{
     
 }
 
-/* Hemsida */
+a{
+    color: #FFD600;
+    text-decoration: none;
+}
+
+/* Home */
 
 .box1{
     grid-area: box1;
@@ -91,7 +97,6 @@ li{
     overflow: hidden;
 
 }
-
 
 .box2{
     grid-area: box2;
@@ -106,13 +111,11 @@ li{
     background-color: blue;
     margin: 15px;
     background-image: url(../img/västkust.jpg);
-    overflow: hidden;
-
-    
+    overflow: hidden;  
 }
+
 .collapsiblebox{
     height: 396.63px;
-    width: 390px;
     display: flex;
     background-color: #3E3838;
     position: relative;
@@ -123,12 +126,12 @@ li{
 
 .collapsiblebox.activated {
     bottom: 0;
-    background-color: #3E3838;
-    
+    background-color: #3E3838;  
+    display: flex;
+    text-align: center;
 }
 
-
-.material-icons.pil.ner{
+.material-icons.pil.ner {
     color: #FFD600;
     position: relative;
     top: 315px;
@@ -138,6 +141,94 @@ li{
     transform: rotateZ(0deg);
     transition: transform 300ms ease-out;
 }
-.material-icons.pil.ner.rotate{
+
+.material-icons.pil.ner.rotate {
     transform: rotateZ(180deg);
+}
+
+.collapsable.info {
+    font-size: 35px;
+    position: relative;
+    top: 330px;
+    right: 20px;
+}
+
+.collapsabletext {
+    font-size: 25px;
+    margin: 0;
+    color: #FFD600;
+    font-family: 'Rockwell';
+    width: 300px;
+    height: 100px;
+    padding: 0;
+    position: relative;
+    right: 0;
+}
+
+/* History */
+
+.historyf{
+    display: grid;
+    grid-template-areas:
+    "rubrik"
+    "låda" ;
+    margin: 15px;
+    grid-template-rows: 5% 95%;
+
+}
+
+.history{
+    color: #FFD600;
+    font-family: 'Rockwell';
+    font-size: 35px;
+    position: relative;
+    grid-area: rubrik;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.låda{
+    grid-area: låda;
+    background-color: #5E5959;
+    border: black solid 5px;
+    height: 95%;
+    
+
+}
+
+
+/* Brands */
+
+.brandlåda1, .brandlåda2, .brandlåda3, .brandlåda4{
+    margin: 15px;
+    background-color: #5E5959;
+    border: #3E3838;
+    border-width: 5px;
+    border-style: solid;
+    border-left-color: #FFD600;
+
+}
+
+.bildlåda1, .bildlåda2, .bildlåda3, .bildlåda4{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    background-color: white;
+    position: relative;
+    bottom: 15px;
+}
+
+.brandname{
+    font-size: 15px;
+    position: relative;
+    left: 200px;
+    top: 40px;
+
+}
+
+.Brandstrength{
+    font-size: 15px;
+    position: relative;
+    left: 200px;
 }

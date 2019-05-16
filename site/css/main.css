@@ -91,55 +91,60 @@ a{
 
 .box1{
     grid-area: box1;
-    background-color: blue;
     margin: 15px;
     background-image: url(../img/skog.jpg);
     overflow: hidden;
+   
 
 }
 
 .box2{
     grid-area: box2;
-    background-color: blue;
     margin: 15px;
     background-image: url(../img/skåne.jpg);
     overflow: hidden;
+    
 } 
 
 .box3{
     grid-area: box3;
-    background-color: blue;
     margin: 15px;
     background-image: url(../img/västkust.jpg);
-    overflow: hidden;  
+    overflow: hidden; 
+    
 }
 
 .collapsiblebox{
     height: 396.63px;
-    display: flex;
     background-color: #3E3838;
     position: relative;
     bottom: 310px;
     transition: 0.3s;
-    text-align: center;
+    display: grid;
+    grid-template-rows: 83% 17%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "brödtext brödtext"
+    "info pil";
+
 }
 
 .collapsiblebox.activated {
     bottom: 0;
     background-color: #3E3838;  
-    display: flex;
-    text-align: center;
 }
 
 .material-icons.pil.ner {
     color: #FFD600;
-    position: relative;
-    top: 315px;
-    left: 300px;
+    width: 75px;
     height: 75px;
     font-size: 75px;
     transform: rotateZ(0deg);
     transition: transform 300ms ease-out;
+    grid-area: pil ;
+    position: relative;
+    left: 100px;
+    bottom: 15px;
 }
 
 .material-icons.pil.ner.rotate {
@@ -148,21 +153,18 @@ a{
 
 .collapsable.info {
     font-size: 35px;
+    grid-area: info ; 
+    height: 75px;
     position: relative;
-    top: 330px;
-    right: 20px;
+    left: 25px;
 }
 
 .collapsabletext {
     font-size: 25px;
-    margin: 0;
     color: #FFD600;
     font-family: 'Rockwell';
-    width: 300px;
-    height: 100px;
-    padding: 0;
-    position: relative;
-    right: 0;
+    grid-area: brödtext ;
+    margin: 20px;
 }
 
 /* History */
@@ -191,12 +193,12 @@ a{
 .låda{
     grid-area: låda;
     background-color: #5E5959;
-    border: black solid 5px;
+    border:  #3E3838 solid 5px;
+    border-left-color: #FFD600;
     height: 95%;
     
 
 }
-
 
 /* Brands */
 
@@ -225,10 +227,4 @@ a{
     left: 200px;
     top: 40px;
 
-}
-
-.Brandstrength{
-    font-size: 15px;
-    position: relative;
-    left: 200px;
 }

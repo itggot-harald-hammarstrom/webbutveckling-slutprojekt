@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <p>
+                <i class="material-icons md-48" onclick="meny()">list</i>
+                Snuswiki
+            </p>
+            <!-- desktop -->
+            <div class="headerknappar">
+                <a class="menyknapp1" href="../site/hemsida.html">Home</a>
+                <a class="menyknapp2" href="../site/brandsida.html">Brands</a>
+                <a class="menyknapp3" href="../site/historysida.html">History</a>
+            </div>
+            <!-- /desktop/ -->
+        </header>
+        <div class="burgarmeny">
+            <ul>
+                <li>
+                    <a href="../site/hemsida.html">Home</a>
+                </li>
+                <li>
+                    <a href="../site/brandsida.html">Brands</a>
+                </li>
+                <li>
+                    <a href="../site/historysida.html">History</a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div class="collapsable1">
+                <div class="collapsiblebox" onclick="collapsible(this)">
+                    <i class="material-icons pil ner">
+                        keyboard_arrow_down
+                    </i>
+                    <p class="collapsable info">Welcome</p>
+                    <div class="collapsabletext">
+                        Welcome to snuswiki. 
+                        This is a site for snusers all around the world where you 
+                        can find some different brands and the history of snus.  
+                    </div>
+                </div>
+                
+            </div>
+            <div class="collapsable2">
+                <div class="collapsiblebox" onclick="collapsible(this)">
+                    <i class="material-icons pil ner">
+                        keyboard_arrow_down
+                    </i>
+                    <p class="collapsable info">Snus info</p>
+                    <div class="collapsabletext">
+                        Snus is a product made from the Tobacco leaf.
+                        It is of swedish origin and it is similar to chewing tobbaco.
+                        You can either have it in portion where it is served in a small bag och just lös (loose).  
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="collapsable3">
+                <div class="collapsiblebox" onclick="collapsible(this)">
+                    <i class="material-icons pil ner">
+                        keyboard_arrow_down
+                    </i>
+                    <p class="collapsable info">About me</p>
+                    <div class="collapsabletext">
+                        I am an 18 year old snuser that is aspiring to conquer the world and make strict laws ensuring everyone is introduced to the wonderful world of Snus. 
+                        Right now I am studiyng and scheming but I will always struggle towards my ultimate goal.  
+                    </div>
+                </div>        
+            </div>
+            <!-- desktop -->
+            <div class="undertext">
+                <p class="infotext">
+                    Welcome to Snuswiki! This is the best site for the everyday snuser. 
+                    If you don't already know snus is a swedish tobbaco product that is better and healthier than most other uses of tobacco. 
+                    It is consumed by either placing it under your lip or inhaling it through your nose (this version is called snuff).
+                    Snus comes in two different types which are lös (loose) or portion which is packed in a small bag.
+                    It also comes in a multitude of different tastes and nikotine amounts. 
+                    Above this text you can see some of the beutiful swedish natures and landscapes that help to inspire snusmakers for new and beutiful ideas of their next snus. 
+                    Please enjoy!
+                </p>
+            </div>
+            <div class="bildgalleri bildgalleridesktop">
+                <div id="slider">
+                <figure class="sliderbox">
+                    <img class="sliderbild" src="../psd/westcoast.jpg" alt="westcoast">
+                    <img class="sliderbild" src="../psd/norrland.jpg" alt="norrland">
+                    <img class="sliderbild" src="../psd/skåne.jpg" alt="skåne">
+                    <img class="sliderbild" src="../psd/kullsvik.jpg" alt="kullsvik">
+                    <img class="sliderbild" src="../psd/göteborg.jpg" alt="göteborg">
+                </figure>
+            </div>
+            <!-- /desktop/ -->
+        </footer>
+        
+    </div> 
+</body>
+    <script src="js/main.js"></script>
+</html>
